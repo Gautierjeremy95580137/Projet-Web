@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+}
+
+header {
+	height: 310px;
+	width: 100%;
+	background-image: url("slipt2.png");
+	background-size: cover;
+	text-align: center;
+}
+
+nav ul   {
+	padding:0px;
+	margin: 0px;
+	list-style-type: none;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .6);
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	width: 170px;
+	text-align: center;
+}
+
+nav ul li a {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.banniereImg {
+	width: 100%;
+	height: 310px;
+	margin: 0;
+}
+
+.logoImg {
+	height: 170px;
+	position: absolute;
+	top: 95px;
+	left: 45%;
+}
+
+footer ul li  {
+    position: fixed;
+    bottom: 0px;
+    padding:0px;
+	margin: 0px;
+	list-style-type: none;
+	display: inline-block;
+	text-align: center;
+
+}
+
+nav li a {
+	text-decoration: none;
+	color: black;
+}
+
+
+footer {
+	text-align:center;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    font-size:13px;
+    margin-top: 10px;
+    width: 100%;
+	background-color: white;
+}
+
+footer p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+h3 {
+	text-align: center;
+}
+
+
+
+
