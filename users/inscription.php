@@ -1,10 +1,20 @@
 <?php
-include "../header.php";
-require "form.php";
-//require "gestion_bdd.php";
 require "utilisateurs.php";
-require "../request.php";
+require "request.php";
+?>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MyFavoriteFlight</title>
+    <link  href="../style.css" rel="Stylesheet" type="text/css" >
+</head>
+<body>
+
+
+<?php
+include "../header.php";
 ?>
 
 <div id="inscription" class="incriptionFormulaire">
@@ -16,7 +26,6 @@ require "../request.php";
 
                     <label for="prenom">Indiquez votre prénom</label>
                     <input type="text" id="prenom" name="prenom"/>
-
 
 
                     <label for="pseudo">Indiquez votre pseudo</label>
@@ -47,7 +56,7 @@ require "../request.php";
     $bdd->getmybdd();
     //$bdd->setInsertAviateur('test2', 'test2prenom', 'monpseudo',  '1983-11-11','mail', 'mdp');
 
-    var_dump($bdd);
+    /**var_dump($bdd);
     var_dump($_POST);
     var_dump($_POST['nom']);
 
@@ -56,7 +65,7 @@ require "../request.php";
     echo $_POST['pseudo'];
     echo $_POST['naissance'];
     echo $_POST['mail'];
-    echo $_POST['mdp'];
+    echo $_POST['mdp'];*/
 
 
     if(sizeof($_POST)>0){
