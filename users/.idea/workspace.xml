@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="15d50eea-7960-48a0-967c-42681c22ba45" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1YG75F87Ll2pGXAj3A8qh8NASGU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15d50eea-7960-48a0-967c-42681c22ba45" name="Default Changelist" comment="" />
+      <created>1582556891938</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582556891938</updated>
+      <workItem from="1582556893229" duration="2383000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="603" y="184" key="#com.intellij.ide.util.MemberChooser" timestamp="1582557292551">
+      <screen x="30" y="23" width="1410" height="877" />
+    </state>
+    <state x="603" y="184" key="#com.intellij.ide.util.MemberChooser/30.23.1410.877@30.23.1410.877" timestamp="1582557292551" />
+    <state x="501" y="285" key="NewPhpClassDialog" timestamp="1582557002547">
+      <screen x="30" y="23" width="1410" height="877" />
+    </state>
+    <state x="501" y="285" key="NewPhpClassDialog/30.23.1410.877@30.23.1410.877" timestamp="1582557002547" />
+    <state x="555" y="392" key="NewPhpFileDialog" timestamp="1582558060410">
+      <screen x="29" y="23" width="1411" height="877" />
+    </state>
+    <state x="555" y="392" key="NewPhpFileDialog/29.23.1411.877@29.23.1411.877" timestamp="1582558060410" />
+    <state x="556" y="392" key="NewPhpFileDialog/30.23.1410.877@30.23.1410.877" timestamp="1582556939085" />
+  </component>
+</project>
