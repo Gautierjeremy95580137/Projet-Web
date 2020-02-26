@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<script type="text/javascript" src="simbrief.apiv1.js"></script>
+	<script type="text/javascript" src="javascript/simbrief.apiv1.js"></script>
 
 
 </head>
@@ -13,8 +13,6 @@
 	
 
 		
-
-
 
 
 

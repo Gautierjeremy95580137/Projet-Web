@@ -4,5 +4,3 @@
             <p class="para" >Ceci est un footer</p>
         </div>
     </footer>
-</body>
-</html>

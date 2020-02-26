@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>À propos</title>
-        <script type="text/javascript" src="simbrief.apiv1.js"></script>
-        <link  href="style.css" rel="Stylesheet" type="text/css" >
-    </head>
-    <body>
-
-        <?php include "header.php" ?>
+<?php include "header.php" ?>
+        <script type="text/javascript" src="javascript/simbrief.apiv1.js"></script>
 
         <div class="signature">
             Étudiants impliqués dans le projet :

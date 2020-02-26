@@ -6,7 +6,7 @@ body {
 header {
 	height: 310px;
 	width: 100%;
-	background-image: url("slipt2.png");
+	background-image: url("../img/slipt2.png");
 	background-size: cover;
 	text-align: center;
 }

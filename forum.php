@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         <title>MyFavoriteFlight</title>
-        <link  href="style.css" rel="Stylesheet" type="text/css" >
+        <link href="style/style.css" rel="Stylesheet" type="text/css" >
     </head>
 <body>
 <?php include "header.php" ?>
