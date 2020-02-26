@@ -1,4 +1,9 @@
 <?php
+/* implantation d'un cookie
+if (!empty($_POST['nom'])){
+    setcookie('utilisateur',$_POST['nom']);
+}*/
+
 require "utilisateurs.php";
 require "request.php";
 ?>

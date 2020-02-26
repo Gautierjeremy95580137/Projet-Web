@@ -10,7 +10,7 @@
 
 	<div class="log">
 		<h2>My Flight Assistant</h2>
-		<p><a href="">Connexion</a></p>
+		<p><a href="/users/login.php">Connexion</a></p>
 		<p><a href="/users/inscription.php">Inscription</a></p>
 	</div>
 
