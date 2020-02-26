@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }*/
 ?>
 
-<header>
+<header id="testheader" class="header">
 	<nav id="menu">        
 		<img class="logoImg" src="../img/logo.png" alt="logo">
 		<ul>

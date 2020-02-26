@@ -3,11 +3,19 @@ function isChange(arg){
 	if(arg==1){
 		//document.body.style.backgroundColor = "black";
 		document.getElementById("balise").classList.replace('baliseWhite','baliseBlack');
+		document.getElementById("test").classList.replace('footer','footer2');
+		document.getElementById("testheader").classList.replace('header2','header');
+
 	}else{
 		//document.body.style.backgroundColor = "white";
 		document.getElementById("balise").classList.replace('baliseBlack','baliseWhite');
+		document.getElementById("test").classList.replace('footer2','footer');
+		document.getElementById("testheader").classList.replace('header','header2');
 	}
 }
+
+
+
 function getValue() {
     // Sélectionner l'élément input et récupérer sa valeur
     var heureLigne1 = Number(document.getElementById('square'+0+'_'+'1').value);
@@ -49,11 +57,6 @@ function getValue() {
    				mesVraiSecond=entierSuperieurResultattake2;
    		}
    }
-
-
-
-    
-
     console.log(valueMinute)
   
 
@@ -64,12 +67,6 @@ function getValue() {
 	html +='</div>'
 
 	document.getElementById('Down2').innerHTML = html;
-   
-
-
-
-
-   
 }
 
 

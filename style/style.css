@@ -3,10 +3,17 @@ body {
 	font-family: Bookman, URW Bookman L, serif;
 }
 
-header {
+.header {
 	height: 310px;
 	width: 100%;
 	background-image: url("../img/slipt2.png");
+	background-size: cover;
+	text-align: center;
+}
+.header2 {
+	height: 310px;
+	width: 100%;
+	background-image: url("../img/spit.jpg");
 	background-size: cover;
 	text-align: center;
 }
@@ -60,13 +67,14 @@ footer ul li  {
 
 }
 
+
 nav li a {
 	text-decoration: none;
 	color: black;
 }
 
 
-footer {
+.footer {
 	text-align:center;
     position: fixed;
     bottom:0;
@@ -79,6 +87,21 @@ footer {
     width: 100%;
 	background-color: rgba(0, 0, 0, .6);
 	color: white;
+
+}
+.footer2 {
+	text-align:center;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    font-size:13px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    width: 100%;
+	background-color: rgba(0, 0, 0, .6);
+	color: green;
 
 }
 
@@ -103,5 +126,12 @@ link {
 .log {
 	text-align: center;
 }
-
+.baliseBlack{
+	background-color: white;
+	color: black;
+}
+.baliseWhite{
+	background-color: black;
+	color: white;
+}
 
