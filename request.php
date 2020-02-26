@@ -84,11 +84,30 @@ class Request
      */
     public function deleteRow($tableBDD, $columnBDD, $value)
     {
-        $query = "DELETE FROM {$tableBDD}  WHERE  {$columnBDD}  LIKE {$value }";
+        $query = "DELETE FROM {$tableBDD}  WHERE  {$columnBDD}  LIKE {$value}";
         var_dump($query);
         $req = $this->bdd->prepare($query);
         $req->execute();
         return true;
     }
+
+    /** cette fonction vérifie l'intégrité du mot de passe
+     * @param $mdpverif mot de passe à vérifier
+     * @param $pseudo
+     * @return bool
+     */
+    public function checkmdp ($mdpverif,$pseudo): bool {
+        $query = "SELECT mdp FROM aviateur WHERE pseudo ='{$pseudo}' LIMIT 1;";
+        $req = $this->bdd->prepare($query);
+        echo $query;
+        $mdpBDD = $req->execute();
+        if ($mdpBDD==$mdpverif){
+            return true;
+        }
+        else {
+
+            return false;
+        }
+}
 }
 ?>

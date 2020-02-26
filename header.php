@@ -1,10 +1,3 @@
-<?php
-/**require "auth.php";
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}*/
-?>
-
 <header>
 	<nav id="menu">        
 		<img class="logoImg" src="../img/logo.png" alt="logo">
