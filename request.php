@@ -96,18 +96,30 @@ class Request
      * @param $pseudo
      * @return bool
      */
-    public function checkmdp ($mdpverif,$pseudo): bool {
-        $query = "SELECT mdp FROM aviateur WHERE pseudo ='{$pseudo}' LIMIT 1;";
-        $req = $this->bdd->prepare($query);
-        echo $query;
-        $mdpBDD = $req->execute();
-        if ($mdpBDD==$mdpverif){
-            return true;
-        }
-        else {
+    public function checkmdp($mdpverif, $pseudo): bool
+    {
+        echo $pseudo;
+        $req = $this->bdd->prepare("SELECT mdp FROM aviateur WHERE pseudo ='{$pseudo}';");
+        $req->execute();
+        $resultat = $req->fetch();
+        echo "debut variable";
+        var_dump($resultat);
+        echo "fin variable";
+        $isPasswordCorrect = password_verify($mdpverif, $resultat["mdp"]);
+        var_dump($isPasswordCorrect);
+        if (!$resultat) {
+            echo 'Mauvais identifiant ou mot de passe CAS 1!';
+        } else {
+            if ($isPasswordCorrect) {
+                session_start();
+                //$_SESSION['id'] = $resultat['id'];
+                $_SESSION['pseudo'] = $pseudo;
+                echo 'Vous êtes connecté !';
+            } else {
+                echo 'Mauvais identifiant ou mot de passe CAS 2!';
 
-            return false;
+            }
         }
-}
+    }
 }
 ?>
