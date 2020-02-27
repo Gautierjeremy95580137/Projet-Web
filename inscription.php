@@ -5,48 +5,58 @@ require "request.php";
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>My Flight Assistant</title>
-    <link  href="style/style.css" rel="Stylesheet" type="text/css" >
-</head>
+
+    <head>
+        <meta charset="utf-8">
+        <title>My Flight Assistant</title>
+        <link  href="style/style.css" rel="Stylesheet" type="text/css" >
+    </head>
+
 <body>
 
+    <?php
+    include "header.php";
+    ?>
 
-<?php
-include "header.php";
-?>
-
-<div id="inscription" class="incriptionFormulaire">
-
-
-    <form method="post">
-        <label for="nom"> Indiquez votre nom</label>
-        <input type="text" id ="'nom'" name="nom"/>
-
-        <label for="prenom">Indiquez votre prénom</label>
-        <input type="text" id="prenom" name="prenom"/>
+        <div class="imgBox1">
+            <img id="AncientPlaneImg" src="img/avion_ancien.jpeg" />
+        </div>
 
 
-        <label for="pseudo">Indiquez votre pseudo</label>
-        <input type="text" id="pseudo" name="pseudo"/>
+        <div class="containerFormulaire">
+            
+            <h3>Inscription</h3>
 
+            <img id="paperPlaneIcon" src="img/paper_plane.svg" />
 
-        <label for="naissance">Indiquez votre date de naissance</label>
-        <input type="text" id ="naissance" name="naissance"/>
+            <div id="inscription" class="incriptionFormulaire">
 
+                <form method="post">
 
-        <label for="mail">Indiquez votre mail</label>
-        <input type="text" id="mail" name="mail"/>
+                    <p>Entrez vos informations personnelles</p>
 
+                    <ul>
+                        <li><label for="prenom">Prénom</label></br><input type="text" id="prenom" name="prenom"/></li>
+                        <li><label for="nom">Nom</label></br><input type="text" id ="'nom'" name="nom"/></li>
+                        <li><label for="naissance">Date de naissance</label></br><input type="date" id ="naissance" name="naissance"/></li>
+                        <li><label for="mail">E-mail</label></br><input type="email" id="mail" name="mail"/></li>
+                    </ul>
 
+                    <p>Entrez vos informations de connexion</p>
 
-        <label for="mdp">Indiquez votre mot de passe</label>
-        <input type="text" id="mdp" name="mdp"/>
+                    <ul>
+                        <li><label for="pseudo">Pseudo</label></br><input type="text" id="pseudo" name="pseudo"/></li>
+                        <li><label for="mdp">Mot de passe</label></br><input type="password" id="mdp" name="mdp"/></li>
+                    </ul>
 
+                    <button type="submit" value="">Finaliser mon inscription</button>
 
-        <button type="submit" value="">Finaliser mon inscription</button>
-    </form>
+                </form>
+            
+            </div>
+
+        </div>
+
 
 
     <?php
