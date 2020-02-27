@@ -15,7 +15,7 @@ if (!$_SESSION['pseudo']){
 	<link href="style/style.css" rel="Stylesheet" type="text/css" >
 	<title></title>
 </head>
-<body>
+<body id ="balise"class="baliseBlack">
 
 	<?php include "header.php" ?>
 

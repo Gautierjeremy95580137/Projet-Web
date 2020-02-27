@@ -237,6 +237,20 @@ link {
 	text-align: justify;
 }
 
+.boutonInscription {
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    border: none;
+    padding: 10px 10px 10px;
+    border-radius: 8px;
+    background: black;
+    font: bold 13px Arial;
+    color: white;
+}
+
+
+
 /* Style de la page d'inscription */
 
 .containerFormulaire {
@@ -286,4 +300,8 @@ li {
 
 .container2 {
 	text-align: center;
+}
+.maPage{
+	width: 100px
+	height:50px;
 }

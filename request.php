@@ -66,7 +66,7 @@ class Request
     public function setInsertAviateur($nom, $prenom, $pseudo, $naissance, $mail, $mdp)
     {
 
-        //$query="INSERT INTO aviateur (" . "nom, prenom, adresse, age ".") VALUES (" . "'".$nom . "',". "'".$prenom . "'," ."'".$adress . "'," . "'".$age . "')";
+        
         $query = "INSERT INTO aviateur( nom, prenom, pseudo, naissance, mail, mdp ) VALUES ('{$nom}', '{$prenom}', '{$pseudo}','{$naissance}','{$mail}', '{$mdp}')";
         $req = $this->bdd->prepare($query);
         echo $query;
@@ -98,25 +98,19 @@ class Request
      */
     public function checkmdp($mdpverif, $pseudo): bool
     {
-        echo $pseudo;
         $req = $this->bdd->prepare("SELECT mdp FROM aviateur WHERE pseudo ='{$pseudo}';");
         $req->execute();
         $resultat = $req->fetch();
-        echo "debut variable";
-        var_dump($resultat);
-        echo "fin variable";
-        $isPasswordCorrect = password_verify($mdpverif, $resultat["mdp"]);
-        var_dump($isPasswordCorrect);
+       $isPasswordCorrect = password_verify($mdpverif, $resultat["mdp"]);
         if (!$resultat) {
-            echo 'Mauvais identifiant ou mot de passe CAS 1!';
+            echo 'Mauvais identifiant ou mot de passe !';
         } else {
             if ($isPasswordCorrect) {
                 session_start();
-                //$_SESSION['id'] = $resultat['id'];
                 $_SESSION['pseudo'] = $pseudo;
                 echo 'Vous êtes connecté !';
             } else {
-                echo 'Mauvais identifiant ou mot de passe CAS 2!';
+                echo 'Mauvais identifiant ou mot de passe !';
 
             }
         }

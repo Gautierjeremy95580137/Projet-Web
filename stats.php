@@ -1,6 +1,6 @@
-x<?php
+<?php
 session_start();
-//var_dump($_SESSION['pseudo']);
+var_dump($_SESSION['pseudo']);
 
 if (!$_SESSION['pseudo']){
         header('Location: login.php');
@@ -19,15 +19,9 @@ if (!$_SESSION['pseudo']){
 <body id ="balise"class="baliseBlack">
 
 <?php include "header.php" ?>
+<div id="Statpage"></div>
 
-<div class="grandcontainerBouton">
-
-    <div class="petitcontainerBouton">
-        <h3>My Flight Assistant</h3>
-        <a href="login.php" class="boutonLog">CONNEXION</a>
-        <a href="inscription.php" class="boutonLog">INSCRIPTION</a>
-    </div>
-</div>
+<script src="javascript/stats.js"></script>
 <?php include "footer.php" ?>
 </body>
 </html>

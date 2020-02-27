@@ -16,7 +16,7 @@ if (!$_SESSION['pseudo']){
 	
 	<title></title>
 </head>
-<body>
+<body id ="balise"class="baliseBlack">
 
 	<?php include "header.php" ?>
 
@@ -43,17 +43,17 @@ if (!$_SESSION['pseudo']){
 
 		<h3>Livre en Kilogramme</h3>
 		<form action="" method="POST">
-		<input type="text" name="n1">
+		<input type="text" name="n2">
 		
 		<input type="submit" value="Calculer">
 		</form>
 		<?php
 
 
-		if(isset($_POST['n1']))// si les variables post existent (elles sont créées suite à la validation du formulaire), on affiche le résultat
+		if(isset($_POST['n2']))// si les variables post existent (elles sont créées suite à la validation du formulaire), on affiche le résultat
 		{
 
-		    $resultat = $_POST['n1']*0.4536;// la variable $resultat prend la valeur demandée
+		    $resultat = $_POST['n2']*0.4536;// la variable $resultat prend la valeur demandée
 
 		    echo  $resultat." KGS";// "echo" sert à afficher du texte
 		}
@@ -63,17 +63,17 @@ if (!$_SESSION['pseudo']){
 
 		<h3>HectoPascal en Pouce de mercure</h3>
 		<form action="" method="POST">
-		<input type="text" name="n1">
+		<input type="text" name="n3">
 		
 		<input type="submit" value="Calculer">
 		</form>
 		<?php
 
 
-		if(isset($_POST['n1']))// si les variables post existent (elles sont créées suite à la validation du formulaire), on affiche le résultat
+		if(isset($_POST['n3']))// si les variables post existent (elles sont créées suite à la validation du formulaire), on affiche le résultat
 		{
 
-		    $resultat = $_POST['n1']/33.864;// la variable $resultat prend la valeur demandée
+		    $resultat = $_POST['n3']/33.864;// la variable $resultat prend la valeur demandée
 
 		    echo  $resultat." inhg";// "echo" sert à afficher du texte
 		}
@@ -83,17 +83,17 @@ if (!$_SESSION['pseudo']){
 
 		<h3>Pouce de mercure en HectoPascal</h3>
 		<form action="" method="POST">
-		<input type="text" name="n1">
+		<input type="text" name="n4">
 		
 		<input type="submit" value="Calculer">
 		</form>
 		<?php
 
 
-		if(isset($_POST['n1']))// si les variables post existent (elles sont créées suite à la validation du formulaire), on affiche le résultat
+		if(isset($_POST['n4']))// si les variables post existent (elles sont créées suite à la validation du formulaire), on affiche le résultat
 		{
 
-		    $resultat = $_POST['n1']*33.864;// la variable $resultat prend la valeur demandée
+		    $resultat = $_POST['n4']*33.864;// la variable $resultat prend la valeur demandée
 
 		    echo  $resultat." HPa";// "echo" sert à afficher du texte
 		}

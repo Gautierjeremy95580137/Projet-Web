@@ -12,7 +12,7 @@ require "request.php";
         <link  href="style/style.css" rel="Stylesheet" type="text/css" >
     </head>
 
-<body>
+<body id ="balise"class="baliseBlack">
 
     <?php
     include "header.php";
