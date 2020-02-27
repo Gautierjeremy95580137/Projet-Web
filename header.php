@@ -17,4 +17,8 @@ if (session_status() === PHP_SESSION_NONE) {
 			<li><a href="cartes.php">Telechargement</a></li>
 		</ul>
 	</nav>
+	<div>
+		<button class="onoff" onclick="onoff(this)"><div>White</div></button>
+		<script src="darkmode.js"></script>
+	</div>
 </header>

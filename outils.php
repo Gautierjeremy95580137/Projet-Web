@@ -10,14 +10,16 @@
 <?php include "header.php" ?>
 
 	<div class="log">
-		<h2>My Flight Assistant</h2>
+		<form>
 
-		<p><a href="login.php">Connexion</a></p>
-		<p><a href="inscription.php">Inscription</a></p>
-		<p><a href="outils.php">Outils</a></p>
+		<div id="Down"></div>
+		<button type="button" onclick="getValue();" >ADDITION</button>
+		<div id="Down2"></div>
 
+		</form>
 	</div>
 
 	<?php include "footer.php" ?>
+	<script src="convertisseurTemporel.js"></script>
 </body>
 </html>
