@@ -1,0 +1,122 @@
+<?php
+session_start();
+var_dump($_SESSION['pseudo']);
+
+if (!$_SESSION['pseudo']){
+        header('Location: login.php');
+        exit();
+}
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="style/style.css" rel="Stylesheet" type="text/css" >
+	
+	<title></title>
+</head>
+<body>
+
+	<?php include "header.php" ?>
+
+		<div class="general" style="text-align: center";>
+		<h1 class="titre" >Convertisseur</h1>
+		<h3>Kilogramme en Livre</h3>
+		<form action="" method="POST">
+		<input type="text" name="n1">
+		
+		<input type="submit" value="Calculer">
+		</form>
+		<?php
+
+
+		if(isset($_POST['n1']))// si les variables post existent (elles sont créées suite à la validation du formulaire), on affiche le résultat
+		{
+
+		    $resultat = $_POST['n1']*2.2046;// la variable $resultat prend la valeur demandée
+
+		    echo  $resultat." LBS";// "echo" sert à afficher du texte
+		}
+		?>
+		<hr>
+
+		<h3>Livre en Kilogramme</h3>
+		<form action="" method="POST">
+		<input type="text" name="n1">
+		
+		<input type="submit" value="Calculer">
+		</form>
+		<?php
+
+
+		if(isset($_POST['n1']))// si les variables post existent (elles sont créées suite à la validation du formulaire), on affiche le résultat
+		{
+
+		    $resultat = $_POST['n1']*0.4536;// la variable $resultat prend la valeur demandée
+
+		    echo  $resultat." KGS";// "echo" sert à afficher du texte
+		}
+		?>
+
+		<hr>
+
+		<h3>HectoPascal en Pouce de mercure</h3>
+		<form action="" method="POST">
+		<input type="text" name="n1">
+		
+		<input type="submit" value="Calculer">
+		</form>
+		<?php
+
+
+		if(isset($_POST['n1']))// si les variables post existent (elles sont créées suite à la validation du formulaire), on affiche le résultat
+		{
+
+		    $resultat = $_POST['n1']/33.864;// la variable $resultat prend la valeur demandée
+
+		    echo  $resultat." inhg";// "echo" sert à afficher du texte
+		}
+		?>
+
+		<hr>
+
+		<h3>Pouce de mercure en HectoPascal</h3>
+		<form action="" method="POST">
+		<input type="text" name="n1">
+		
+		<input type="submit" value="Calculer">
+		</form>
+		<?php
+
+
+		if(isset($_POST['n1']))// si les variables post existent (elles sont créées suite à la validation du formulaire), on affiche le résultat
+		{
+
+		    $resultat = $_POST['n1']*33.864;// la variable $resultat prend la valeur demandée
+
+		    echo  $resultat." HPa";// "echo" sert à afficher du texte
+		}
+		?>
+
+
+
+
+
+
+		<hr>
+		<h3>Convertions Temporel</h3>
+		<div id="Down"></div>
+		<button type="button" onclick="getValue()"; >ADDITION</button>
+		<div id="Down2"></div>
+		<script src="convertisseurTemporel.js"></script>
+
+</div>
+
+
+
+
+	<?php include "footer.php" ?>
+
+</body>
+</html>

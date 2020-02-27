@@ -44,6 +44,18 @@ nav ul li a {
 	font-weight: bold;
 }
 
+.general {
+	height:100%;
+}
+
+#Down2 {
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	border: 2px;
+	background-color: red;
+}
+
 .banniereImg {
 	width: 100%;
 	height: 310px;
@@ -273,4 +285,8 @@ li {
 #AncientPlaneImg {
 	height: 100%;
 	width: 100%;
+}
+
+.container2 {
+	text-align: center;
 }

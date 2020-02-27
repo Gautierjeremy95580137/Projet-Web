@@ -4,7 +4,7 @@
 		<ul>
 			<li><a href="index.php">Accueil</a></li>
 			<li><a href="planvol.php">Plan de vol</a></li>
-			<li><a href="outils.php">Convertisseur</a></li>
+			<li><a href="convertisseur.php">Convertisseur</a></li>
 			<li><a href="forum.php">Forum</a></li>
 			<li><a href="stats.php">Ma page</a></li>
 			<li><a href="cartes.php">Telechargement</a></li>
