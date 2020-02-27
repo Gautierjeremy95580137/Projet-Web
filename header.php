@@ -14,7 +14,7 @@
 		</ul>
 	</nav>
 	<div>
-		<button class="onoff" onclick="onoff(this)"><div>White</div></button>
+		<button class="onoff" onclick="onoff(this)"><div>Activer le mode sombre</div></button>
 		<script src="darkmode.js"></script>
 	</div>
 </header>

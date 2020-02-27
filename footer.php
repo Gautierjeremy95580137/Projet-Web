@@ -1,6 +1,5 @@
     <footer>
-        <div id="testfooter" class="footer" >
-            <p><a id="link" href="about.php">À propos</a></p>
-            <p class="para" >Ceci est un footer</p>
+        <div class="footer" >
+            <a id="link" href="about.php">À propos</a>
         </div>
     </footer>
