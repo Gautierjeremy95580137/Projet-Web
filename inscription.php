@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "utilisateurs.php";
 require "request.php";
 ?>
@@ -36,8 +37,8 @@ require "request.php";
                     <p>Entrez vos informations personnelles</p>
 
                     <ul>
+                         <li><label for="nom">Nom</label></br><input type="text" id ="'nom'" name="nom"/></li>
                         <li><label for="prenom">Prénom</label></br><input type="text" id="prenom" name="prenom"/></li>
-                        <li><label for="nom">Nom</label></br><input type="text" id ="'nom'" name="nom"/></li>
                         <li><label for="naissance">Date de naissance</label></br><input type="date" id ="naissance" name="naissance"/></li>
                         <li><label for="mail">E-mail</label></br><input type="email" id="mail" name="mail"/></li>
                     </ul>
@@ -50,6 +51,12 @@ require "request.php";
                     </ul>
 
                     <button type="submit" value="">Finaliser mon inscription</button>
+
+
+                    <?php if ($_POST['nom']): ?>
+                            <h2>Vous êtes inscrits</h2>
+                         <li><a href="login.php">connectez-vous ici</a></li>
+                    <?php endif ?>
 
                 </form>
             

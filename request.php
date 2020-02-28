@@ -108,7 +108,7 @@ class Request
             if ($isPasswordCorrect) {
                 session_start();
                 $_SESSION['pseudo'] = $pseudo;
-                echo 'Vous êtes connecté !';
+                echo '<div class="onoff">Vous êtes connecté !</div>';
             } else {
                 echo 'Mauvais identifiant ou mot de passe !';
 
