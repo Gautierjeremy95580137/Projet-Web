@@ -3,6 +3,7 @@ body {
 	font-family: Bookman, URW Bookman L, serif;
 }
 
+
 .header {
 	height: 310px;
 	width: 100%;
@@ -50,10 +51,12 @@ nav ul li a {
 
 #Down2 {
 	text-align: center;
-	width: 100%;
+	margin: auto;
+	margin-top: 10px;
+	width: 100px;
 	height: 50px;
 	border: 2px;
-	background-color: red;
+	background-color: white;
 }
 
 .banniereImg {
@@ -155,12 +158,17 @@ link {
 	text-align: center;
 }
 .baliseBlack{
-	background-color: white;
+	
 	color: black;
+	width: 100%;
+	height: 100%;
 }
+
 .baliseWhite{
-	background-color: black;
+	
 	color: white;
+	width: 100%;
+	height: 100%;
 }
 .onoff
 {
@@ -291,6 +299,7 @@ li {
 	position: absolute;
 	height: 110%;
 	width: 100%;
+	z-index: -1000;
 }
 
 #AncientPlaneImg {
@@ -301,7 +310,16 @@ li {
 .container2 {
 	text-align: center;
 }
+
+/*
 .maPage{
 	width: 100px
-	height:50px;
+	height: 50px;
+}
+*/
+
+/* Bouton de reconnexion de la page lougout */
+
+#reco {
+	
 }

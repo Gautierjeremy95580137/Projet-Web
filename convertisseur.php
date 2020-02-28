@@ -16,9 +16,17 @@ if (!$_SESSION['pseudo']){
 	
 	<title></title>
 </head>
+
+<?php include "header.php" ?>
+
 <body id ="balise"class="baliseBlack">
 
-	<?php include "header.php" ?>
+
+
+	<div class="imgBox1">
+        <img id="AncientPlaneImg" src="img/avion_ancien.jpeg" />
+    </div>
+
 
 		<div class="general" style="text-align: center";>
 		<h1 class="titre" >Convertisseur</h1>
@@ -105,9 +113,10 @@ if (!$_SESSION['pseudo']){
 
 
 		<hr>
-		<h3>Convertions Temporel</h3>
+		<h3>Conversion temporelle</h3>
+		<h4>Veuillez entrer des valeurs au format HH:MM:SS</h4>
 		<div id="Down"></div>
-		<button type="button" onclick="getValue()"; >ADDITION</button>
+		<button type="button" onclick="getValue()"; >Addition</button>
 		<div id="Down2"></div>
 		<script src="convertisseurTemporel.js"></script>
 

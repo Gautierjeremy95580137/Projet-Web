@@ -7,6 +7,10 @@
 </head>
 <body id ="balise"class="baliseBlack">
 
+<div class="imgBox1">
+    <img id="AncientPlaneImg" src="img/avion_ancien.jpeg" />
+</div>
+
 <?php include "header.php" ?>
 
 	<div class="log">

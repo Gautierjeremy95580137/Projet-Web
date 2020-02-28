@@ -9,22 +9,28 @@ require_once 'request.php';
     <title>MyFavoriteFlight</title>
     <link href="style/style.css" rel="Stylesheet" type="text/css" >
 </head>
-<body id ="balise"class="baliseBlack">
 
 <?php
 include 'header.php';
 ?>
 
+<body id ="balise"class="baliseBlack body">
+
+    <div class="imgBox1">
+        <img id="AncientPlaneImg" src="img/avion_ancien.jpeg" />
+    </div>
+
+
 <div class="grandContainerLog">
     <form method="post" class="petitcontainerLog">
         <input type="text" name="pseudo" placeholder="Votre pseudo" class="formLog" >
         <input type="password" name="mdp" placeholder="Mot de passe" class="formLog">
-        <button type="submit" name="login" value="soumis" class="formLog">Se connecter</button>
+        <button type="submit" name="login" value="soumis" class="formLog">Connexion</button>
     </form>
 </div>
 <div class="grandContainerLog">
 
-    <a href="inscription.php" class="petitcontainerLog logRedirectInscscription boutonInscription">INSCRIPTION</a>
+    <a href="inscription.php" class="onoff">Inscription</a>
 </div>
 
 <?php include 'footer.php' ?>
@@ -32,13 +38,12 @@ include 'header.php';
 <?php
 if(isset($_POST['login']))
 {
-   
-   
+  
     $bdd = new Request('mysql', 'localhost', 'aviation', 'root', 'root');
     $bdd->getmybdd();
     $ok = $bdd->checkmdp($_POST['mdp'], $_POST['pseudo']);
 
-
+   
 }
 
 ?>

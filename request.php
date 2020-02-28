@@ -103,14 +103,15 @@ class Request
         $resultat = $req->fetch();
        $isPasswordCorrect = password_verify($mdpverif, $resultat["mdp"]);
         if (!$resultat) {
-            echo 'Mauvais identifiant ou mot de passe !';
+           echo '<div class="onoff">Mauvais identifiant ou mot de passe ! CAS 1</div>';
         } else {
             if ($isPasswordCorrect) {
                 session_start();
                 $_SESSION['pseudo'] = $pseudo;
-                echo '<div class="onoff">Vous êtes connecté !</div>';
+                echo '<div class="onoff">Vous êtes connecté</div>';
+
             } else {
-                echo 'Mauvais identifiant ou mot de passe !';
+                echo '<div class="onoff">Mauvais identifiant ou mot de passe ! CAS2</div>';
 
             }
         }

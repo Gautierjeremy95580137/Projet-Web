@@ -30,7 +30,7 @@ function getValue() {
 
   var html = '';
     html +='<div>'
-    html +='<p>'+hrs+'/'+min+'/'+s+'</p>'
+    html +='<p>'+hrs+':'+min+':'+s+'</p>'
     html +='</div>'
 
     document.getElementById('Down2').innerHTML = html;

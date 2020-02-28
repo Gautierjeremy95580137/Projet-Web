@@ -13,7 +13,7 @@ require "request.php";
         <link  href="style/style.css" rel="Stylesheet" type="text/css" >
     </head>
 
-<body id ="balise"class="baliseBlack">
+<body id ="balise"class="baliseWhite body">
 
     <?php
     include "header.php";
@@ -22,6 +22,7 @@ require "request.php";
         <div class="imgBox1">
             <img id="AncientPlaneImg" src="img/avion_ancien.jpeg" />
         </div>
+        
 
 
         <div class="containerFormulaire">

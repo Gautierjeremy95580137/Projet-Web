@@ -5,10 +5,9 @@
 			<li><a href="index.php">Accueil</a></li>
 			<li><a href="planvol.php">Plan de vol</a></li>
 			<li><a href="convertisseur.php">Convertisseur</a></li>
-			<li><a href="stats.php">Ma page</a></li>
 			<li><a href="cartes.php">Telechargement</a></li>
             <?php if ($_SESSION['pseudo']): ?>
-                <li><a href="logout.php">Se déconnecter</a></li>
+                <li class="onoff"><a href="logout.php">Déconnexion</a></li>
             <?php endif ?>
 		</ul>
 	</nav>

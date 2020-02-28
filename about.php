@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <title>MyFavoriteFlight</title>
     <link href="style/style.css" rel="Stylesheet" type="text/css" >
-
 </head>
-<body id ="balise"class="baliseBlack">
 
 <?php include "header.php" ?>
+
+<body id ="balise"class="baliseBlack body">
+
+        <div class="imgBox1">
+            <img id="AncientPlaneImg" src="img/avion_ancien.jpeg" />
+        </div>
         
 
         <div class="signature">
